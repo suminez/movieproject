@@ -9,10 +9,13 @@
     <body>
 
         <!--nav bar-->
-
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="{% url 'movieapp:index' %}">
                Online Movie Store           </a>
+               <button class="navbar" type="button"  >
+                <a class="navbar-brand" style="color: black;"href="{% url 'movieapp:add_movie' %}">
+                   Add       </a>
+              </button>
         </nav>
         <!--to show content after nav bar-->
         {% block body %}
